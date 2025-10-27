@@ -67,20 +67,22 @@ export default function Home() {
               <Link
                 key={tool.route}
                 href={tool.route}
-                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-slate-100 overflow-hidden"
+                className="group relative bg-white/60 backdrop-blur-md rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-indigo-200/30 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* subtle prismatic sheen */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-indigo-50/20 to-white/10 opacity-100 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute -left-16 -top-16 w-48 h-48 bg-gradient-to-tr from-indigo-200/10 to-indigo-400/6 rounded-full filter blur-3xl opacity-70 pointer-events-none" />
                 <div className="relative z-10">
-                  <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white group-hover:scale-110 transition-transform duration-300">
+                  <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-600 via-blue-600 to-violet-600 text-white group-hover:scale-110 transition-transform duration-300 ring-1 ring-white/10">
                     {typeof Icon === "function" ? <Icon className="w-8 h-8" /> : <span className="text-2xl">{String(IconRaw)}</span>}
                   </div>
-                  <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">
                     {tool.name}
                   </h3>
                   <p className="text-slate-600 text-sm line-clamp-2">
                     {tool.description}
                   </p>
-                  <div className="mt-4 flex items-center text-blue-600 text-sm font-medium">
+                  <div className="mt-4 flex items-center text-indigo-600 text-sm font-medium">
                     Try Now
                     <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -96,10 +98,11 @@ export default function Home() {
       {/* Tools by Category */}
       {categories.map(([cat, categoryTools]) => (
         <section key={cat} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-          <div className="bg-white rounded-3xl shadow-xl border border-slate-100 p-8 sm:p-12 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-white opacity-50" />
+      <div className="bg-gradient-to-br from-white/90 to-white/75 rounded-3xl shadow-2xl border border-indigo-50 p-8 sm:p-12 relative overflow-hidden backdrop-blur-sm">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/5 via-white/30 to-white/10 opacity-60" />
+        <div className="absolute -right-24 -top-24 w-64 h-64 bg-gradient-to-tr from-indigo-200/10 to-violet-200/6 rounded-full blur-3xl opacity-60 pointer-events-none" />
             
-            <div className="relative z-10">
+        <div className="relative z-10">
               <div className="flex items-center gap-3 mb-8">
                 <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
                   {cat} Tools
