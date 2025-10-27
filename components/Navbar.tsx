@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" legacyBehavior>
             <a className="flex items-center gap-2">
-              <img src="/logo.svg" alt="PDF Maker AI" className="w-10 h-10 logo-hover" />
+              <img src="/logo.png" alt="PDF Maker AI" className="w-10 h-10 logo-hover" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
                   PDF Maker AI
@@ -148,7 +148,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between mb-6">
             <Link href="/" legacyBehavior>
               <a className="flex items-center gap-3" onClick={() => setOpen(false)}>
-                <img src="/logo.svg" alt="PDF Maker AI" className="w-10 h-10" />
+                <img src="/logo.png" alt="PDF Maker AI" className="w-10 h-10" />
                 <div>
                   <div className="font-bold text-sm">PDF Maker AI</div>
                   <div className="text-xs text-slate-500">Smart PDF Solutions</div>

@@ -21,10 +21,10 @@ export default function SEO({ title, description, image = "/og-image.svg", canon
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
       <link rel="manifest" href="/manifest.json" />
-  {/* favicons / touch icons */}
-  <link rel="icon" href="/logo.svg" />
-  <link rel="shortcut icon" href="/logo.svg" />
-  <link rel="apple-touch-icon" href="/logo.svg" />
+  {/* favicons / touch icons (use provided PNG for broad compatibility) */}
+  <link rel="icon" href="/logo.png" />
+  <link rel="shortcut icon" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
       <meta name="theme-color" content="#2563EB" />
 
       {/* Open Graph */}
@@ -63,7 +63,7 @@ export default function SEO({ title, description, image = "/og-image.svg", canon
                 "@id": "https://pdfmakerai.shop/#organization",
                 "name": "PDF Maker AI",
                 "url": "https://pdfmakerai.shop/",
-                "logo": "https://pdfmakerai.shop/logo.svg",
+                "logo": "https://pdfmakerai.shop/logo.png",
                 "sameAs": []
               }
             ]

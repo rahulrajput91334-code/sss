@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.svg" alt="PDF Maker AI" className="w-10 h-10 rounded-xl shadow-lg bg-white p-1" />
+              <img src="/logo.png" alt="PDF Maker AI" className="w-10 h-10 rounded-xl shadow-lg bg-white p-1 object-cover" />
               <div>
                 <div className="text-lg font-bold">PDF Maker AI</div>
                 <div className="text-xs text-slate-300 -mt-1">Smart PDF Solutions</div>
