@@ -31,8 +31,8 @@ export const metadata = {
 		},
 	},
 	icons: {
-		icon: "/logo.svg",
-		shortcut: "/logo.svg",
+		icon: "/logo.png",
+		shortcut: "/logo.png",
 		apple: "/logo.png",
 		other: {
 			rel: "apple-touch-icon",
@@ -43,7 +43,7 @@ export const metadata = {
 			title: "PDF Maker AI — Online PDF Tools for PDF Lovers",
 			description:
 				"PDF Maker AI is the ultimate online suite for PDF lovers. Use our powerful AI OCR, Merge, Split, Compress, Office to PDF, PDF to JPG tools and more—completely free and easy to use.",
-			images: ["/og-image.svg", "/logo.svg"],
+			images: ["/og-image.svg", "/logo.png"],
 			siteName: "PDF Maker AI",
 		},
 		twitter: {
